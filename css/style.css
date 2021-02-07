@@ -32,6 +32,7 @@ body {
 
 }
 
+/* header */
 header {
     font-family: 'Roboto', sans-serif;
 }
@@ -48,6 +49,16 @@ header {
     font-size: 16px;
     color: #1b1b1b;
     background-color: #ffc222;
+
+    position: relative;
+}
+
+.header__btn::before {
+    font-family: 'icomoon' !important;
+    content: "\f0b1";
+    position: absolute;
+    left: 22px;
+    color: #1b1b1b;
 }
 
 .header__contacts:after {
@@ -61,6 +72,8 @@ header {
     color: #cbcacb;
     letter-spacing: 0.25px;
     line-height: 45px;
+
+    position: relative;
 }
 
 .header__phone {
@@ -68,6 +81,75 @@ header {
     padding-right: 30px;
 }
 
+.header__phone:before {
+    font-family: 'icomoon' !important;
+    content: "\f095";
+    position: absolute;
+    left: 0;
+    color: #ffc222;
+}
+
 .header__email {
     padding-left: 24px;
+}
+
+.header__email:before {
+    font-family: 'icomoon' !important;
+    content: "\f003";
+    position: absolute;
+    left: 0;
+    color: #ffc222;
+}
+
+.header__content {
+    padding: 34px 0px 23px;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.header__content-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    color: #323232;
+    font-size: 16px;
+    line-height: 36px;
+
+    border: 1px solid transparent;
+    padding: 0px 16px;
+
+    transition: .2s linear;
+}
+
+.menu a:hover {
+    border-color: #ffc222;
+}
+
+.menu li + li {
+    padding-left: 10px;
+}
+
+#modal {
+    display: none;
+}
+/* header end ----------------------------------------- */
+
+/* slider -------------------------------- */
+.slider {
+    background-image: url(../img/slider-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+
+.slider__item {
+    display: none;
+    color: #fff;
+    text-align: center;
 }
