@@ -58,3 +58,7 @@
 .icon-quote-right:before {
   content: "\f10e";
 }
+
+.icon-angle-double-right:before {
+  content: "\f101";
+}
