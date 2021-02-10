@@ -49,15 +49,17 @@ header {
     font-size: 16px;
     color: #1b1b1b;
     background-color: #ffc222;
+    display: block;
 
     position: relative;
 }
 
-.header__btn::before {
-    font-family: 'icomoon' !important;
-    content: "\f0b1";
+.header__btn:before {
     position: absolute;
     left: 22px;
+
+    font-family: 'icomoon';
+    content: "\f0b1";
     color: #1b1b1b;
 }
 
@@ -82,10 +84,11 @@ header {
 }
 
 .header__phone:before {
-    font-family: 'icomoon' !important;
-    content: "\f095";
     position: absolute;
     left: 0;
+
+    font-family: 'icomoon';
+    content: "\f095";
     color: #ffc222;
 }
 
@@ -94,10 +97,11 @@ header {
 }
 
 .header__email:before {
-    font-family: 'icomoon' !important;
-    content: "\f003";
     position: absolute;
     left: 0;
+
+    font-family: 'icomoon';
+    content: "\f003";
     color: #ffc222;
 }
 
@@ -172,14 +176,13 @@ header {
     margin-bottom: 50px;
 }
 
-
-
 .default-btn {
     font-family: 'Roboto', sans-serif;
     height: 40px;
     border: 1px solid #ffc222;
     border-right-width: 20px;
     outline: none;
+    display: inline-block;
 
     font-size: 14px;
     line-height: 24px;
@@ -192,15 +195,15 @@ header {
     position: relative;
 }
 
-/* .default-btn:after {
-    font-family: 'icomoon' !important;
-    content: "\f101";
+.default-btn:after {
+    position: absolute;
     top: 50%;
+    right: -13px;
     transform: translateY(-50%);
-    
-    right: 8px;
-    
-} */
+
+    font-family: 'icomoon';
+    content: "\f105";
+}
 
 .slider__inner {
     position: relative;
@@ -224,8 +227,22 @@ header {
     right: 0;
 }
 
+.slick-next:before {
+    font-family: 'icomoon';
+    content: "\f105";
+
+    color: #fff;
+}
+
 .slick-prev {
     left: 0;
+}
+
+.slick-prev:before {
+    font-family: 'icomoon';
+    content: "\f104";
+
+    color: #fff;
 }
 
 .slick-btn.slick-disabled {
@@ -245,13 +262,15 @@ header {
     margin-bottom: 60px;
 }
 
-.services__title-box {
+.services__title-box,
+.form__title-box {
     max-width: 520px;
     padding-left: 140px;
     position: relative;
 }
 
-.services__title-box:before {
+.services__title-box:before,
+.form__title-box:before {
     content: "";
     position: absolute;
     width: 100px;
@@ -261,7 +280,8 @@ header {
     left: 0;
 }
 
-.services-title {
+.services-title,
+.form-title {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     line-height: 24px;
@@ -271,7 +291,8 @@ header {
     margin-bottom: 20px;
 }
 
-.services-text {
+.services-text,
+.form-text {
     letter-spacing: 0.01em;
 }
 
@@ -282,6 +303,12 @@ header {
     padding: 5px 38px;
 
     border: 3px solid #e6e6e6;
+    transition: .2s linear;
+}
+
+.services__btn a:hover {
+    background-color: #373636;
+    color: #fff;
 }
 
 .services__items {
@@ -318,7 +345,6 @@ header {
     bottom: 40px;
     left: 0;
     right: 0;
-    
 }
 
 .services__item-btn .default-btn {
@@ -337,3 +363,181 @@ header {
     margin-right: 60px;
 }
 /* services and ---------------------------------------- */
+
+/* about */
+.about {
+    background-image: url(../img/about-bc.jpg);
+    background-size: cover;
+    background-position: center;
+    max-height: 300px;
+    background-repeat: no-repeat;
+    padding: 37px 0px 48px;
+    margin-bottom: 45px;
+}
+
+.about-inner {
+    max-width: 545px;
+}
+
+.about-title {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+
+    margin-bottom: 30px;
+}
+
+.about-text {
+    margin-bottom: 25px;
+    letter-spacing: 0.01em;
+    color: #d3d2d2;
+}
+/* about ends */
+
+/* form */
+.form-inner {
+    padding-bottom: 40px;
+    background-image: url(../img//woman.jpg);
+    min-height: 460px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.form-box {
+    max-width: 850px;
+    padding-top: 45px;
+}
+
+.form-box-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-box-inner label,
+.form-box-inner input,
+.form-box-inner textarea {
+    display: block;
+    width: 100%;
+}
+
+.form-box-inner label {
+    font-family: Roboto;
+    line-height: 36px;
+    color: #282828;
+    
+}
+
+.form-box-inner input {
+    margin-bottom: 8px;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    outline: none;
+    padding: 0px 10px;
+}
+
+.form-box-inner select {
+    outline: none;
+    padding-left: 17px;
+}
+
+.form-box-inner .jq-selectbox.jqselect {
+    display: block;
+    width: 100%;
+}
+
+.form-box-inner .jq-selectbox__select {
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    padding-left: 18px;
+
+    position: relative;
+    /* background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: none; */
+}
+
+.form-box-inner .jq-selectbox__trigger-arrow:before {
+    font-family: 'icomoon';
+    content: "\f107";
+
+    position: absolute;
+    right: 15px;
+    top: 0;
+
+    color: #282828;
+}
+
+.form-box-inner .jq-selectbox__dropdown {
+	width: 100%;
+	margin: 2px 0 0;
+	padding: 0;
+	border: 1px solid #e6e6e6;
+	background: #FFF;
+	box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
+
+.form-box-inner .jq-selectbox li {
+	min-height: 18px;
+	padding: 5px 17px 6px;
+	color: #231F20;
+}
+
+.form-box-inner .jq-selectbox li.selected {
+	background-color: #A3ABB1;
+	color: #FFF;
+}
+
+.form-box-inner .jq-selectbox li:hover {
+	background-color: #08C;
+	color: #FFF;
+}
+
+.form-box-inner .jq-selectbox li.disabled {
+	color: #AAA;
+}
+
+.form-box-inner .jq-selectbox li.disabled:hover {
+	background: none;
+}
+
+.form-box-inner .jq-selectbox li.optgroup {
+	font-weight: bold;
+}
+
+.form-box-inner .jq-selectbox li.optgroup:hover {
+	background: none;
+	color: #231F20;
+	cursor: default;
+}
+
+.form-box-inner .jq-selectbox li.option {
+	padding-left: 25px;
+}
+
+.form-box-inner textarea {
+    outline: none;
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+    height: 207px;
+    resize: none;
+
+    margin-bottom: 40px;
+}
+
+.form-box-left {
+    max-width: 260px;
+    width: 100%;
+}
+
+.form-box-right {
+    max-width: 555px;
+    width: 100%;
+}
+
+.form-box-inner button {
+    background-color: transparent;
+    color: #282828;
+    float: right;
+}
