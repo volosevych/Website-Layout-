@@ -41,7 +41,8 @@ header {
     background-color: #303030;
 }
 
-.header__btn {
+.header__btn,
+.footer__btn {
     float: right;
     padding: 5px 20px 4px 50px;
 
@@ -54,7 +55,8 @@ header {
     position: relative;
 }
 
-.header__btn:before {
+.header__btn:before,
+.footer__btn:before {
     position: absolute;
     left: 22px;
 
@@ -736,4 +738,104 @@ header {
 
 .news__slider-inner .slick-disabled:before {
     color: #dadada;
+}
+/* news and ------------------------------------ */
+
+/* footer ------------------------------------- */
+.footer__content {
+    background-color: #595959;
+    padding: 20px 0px 30px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__map {
+    padding-top: 40px;
+}
+
+.footer__inner .footer__btn {
+    float: none;
+    display: inline-block;
+}
+
+.footer__info {
+    max-width: 360px;
+}
+
+.footer-title {
+    font-family: Roboto;
+    font-size: 16px;
+
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    line-height: 36px;
+
+    color: #ffffff;
+}
+
+.footer-text {
+    line-height: 18px;
+    color: #d3d2d2;
+    margin-bottom: 20px;
+}
+
+.footer-list {
+    padding-top: 25px;
+}
+
+.footer-list li {
+    margin-top: 10px;
+}
+
+.footer-list a {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+
+    color: #fff;
+
+    font-weight: 400;
+    font-family: Roboto;
+
+    padding-left: 33px;
+    position: relative;
+}
+
+.footer-list a:before {
+    font-family: 'icomoon';
+    content: "\f003";
+
+    position: absolute;
+    left: 0;
+
+    color: #ffc222;
+}
+
+.footer-list .footer-phone::before {
+    content: "\f095";
+    left: 3px;
+}
+
+
+.footer-list .footer-address::before {
+    content: "\f041";
+    left: 3px;
+}
+
+.footer__copy {
+    font-family: Roboto;
+    background-color: #303030;
+    text-align: center;
+    
+}
+
+.copy-text {
+    font-size: 12px;
+    line-height: 24px;
+    padding: 8px 0px;
+    font-weight: 400;
+    color: #fff;
 }
