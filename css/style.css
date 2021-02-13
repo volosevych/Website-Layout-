@@ -752,7 +752,13 @@ header {
 }
 
 .footer__map {
-    padding-top: 40px;
+    padding-top: 10px;
+    max-width: 630px;
+    width: 100%;
+}
+
+.footer__map iframe {
+    width: 100%;
 }
 
 .footer__inner .footer__btn {

@@ -1,3 +1,4 @@
+/* ------ 1156px ------- */
 @media ( max-width: 1156px ) {
     .services__item{
         max-width: 80%;
@@ -30,14 +31,53 @@
         max-width: 100%;
         margin-bottom: 90px;
     }
+
+    .news__blog {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .news-img {
+        margin-right: 50px;
+        float: left;
+    }
+
+    .news__blog:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    .news {
+        padding-bottom: 60px;
+    }
+
+    .footer__info {
+        max-width: 465px;
+        margin-bottom: 30px;
+    }
 }
 
+/* ------ 1050px ------- */
+@media ( max-width: 1050px ) {
+    .footer__inner {
+        display: block;
+    }
+
+    .footer__map {
+        max-width: 100%;
+    }
+}
+
+/* ------ 900px ------- */
 @media ( max-width: 900px ) {
     .slider .slick-btn {
         display: none !important;
     }
 
-    .services__top {
+    .services__top,
+    .news__top {
         display: block;
     }
 
@@ -55,7 +95,8 @@
         display: none;
     }
 
-    .services__btn {
+    .services__btn,
+    .news__btn {
         text-align: center;
     }
 
@@ -78,11 +119,9 @@
     .form {
         padding-bottom: 25px;
     }
-
-    
 }
 
-
+/* ------ 700px ------- */
 @media ( max-width: 700px ) {
     .header__btn {
         float: none;
@@ -94,6 +133,10 @@
 
     .header__btn:before {
         display: none;
+    } 
+
+    .footer__btn .header__btn:before {
+        display: block;
     } 
 
     .header__btn-menu {
@@ -135,6 +178,34 @@
 
 }
 
+/* ------ 540px ------- */
+@media ( max-width: 540px ) {
+    .news__slider {
+        padding: 50px 15px 25px 25px;
+    }
+
+    .news__slider:before {
+        left: 25px;
+    }
+
+    .news__slider-inner .slick-next {
+        right: -20px;
+    }
+
+    .news__slider-inner .slick-prev {
+        right: 35px;
+    }
+
+    .news-img {
+        float: none;
+    }
+
+    .news__slider-inner .slick-btn {
+        bottom: -90px;
+    }
+}
+
+/* ------ 414px ------- */
 @media ( max-width: 414px ) {
     .slider__title {
         font-size: 24px;
@@ -155,12 +226,14 @@
     }
 }
 
+/* ------ 375px ------- */
 @media ( max-width: 375px ) {
     .header__email {
         padding-right: 30px;
     }
 }
 
+/* ------ MIN-WIDTH 700px ------- */
 @media ( min-width: 700px ) {
     .menu ul {
         display: block !important;
