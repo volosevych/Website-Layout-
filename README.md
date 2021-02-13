@@ -14,7 +14,7 @@
 
 - [Link to website](https://volosevych.github.io/Website-Layout-/)
 
-## Extensions
+## Extensions:
 [Slick Slider](https://kenwheeler.github.io/slick/), [IcoMoon](https://icomoon.io/)
 
 ## License:
