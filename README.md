@@ -3,7 +3,7 @@
 
   ## Table of Contents
 - [Description](#description)
-- [Extensions] (#extensions)
+- [Extensions](#extensions)
 - [License](#license) 
 - [Questions](#questions)
 
