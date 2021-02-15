@@ -10,7 +10,7 @@
 ## Description:
 ![License](https://img.shields.io/badge/License--blue.svg "License Badge")
 
-...
+Responsive website with using HTML, CSS and javascript.
 
 - [Link to website](https://volosevych.github.io/Website-Layout-/)
 
